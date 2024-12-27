@@ -75,7 +75,7 @@ body {
   box-sizing: border-box;
 }
 
-.btn-style-two {
+.btn-style-two{
   position: relative;
   font-weight: 600;
   font-size: 14px;
@@ -88,7 +88,7 @@ body {
   background-color: black;
 }
 
-.btn-style-two:before {
+.btn-style-two:before{
   -webkit-transition-duration: 800ms;
   transition-duration: 800ms;
   position: absolute;
@@ -104,11 +104,11 @@ body {
   background-color: #6366F1;
 }
 
-.btn-style-two:hover:before {
+.btn-style-two:hover:before{
   top: 0%;
 }
 
-.btn-style-two .btn-wrap {
+.btn-style-two .btn-wrap{
   position: relative;
   z-index: 1;
   float: left;
@@ -116,7 +116,7 @@ body {
   display: inline-block;
 }
 
-.btn-style-two .btn-wrap .text-one {
+.btn-style-two .btn-wrap .text-one{
   position: relative;
   display: block;
   color: white;
@@ -125,13 +125,13 @@ body {
   -webkit-transition: all 0.3s ease;
 }
 
-.btn-style-two:hover .btn-wrap .text-one:first-child {
+.btn-style-two:hover .btn-wrap .text-one:first-child{
   -webkit-transform: translateY(-150%);
   -ms-transform: translateY(-150%);
   transform: translateY(-150%);
 }
 
-.btn-style-two .btn-wrap .text-two {
+.btn-style-two .btn-wrap .text-two{
   position: absolute;
   top: 100%;
   display: block;
@@ -141,9 +141,11 @@ body {
   transition: all 0.3s ease;
 }
 
-.btn-style-two:hover .btn-wrap .text-two {
+.btn-style-two:hover .btn-wrap .text-two{
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-} 
+}
+
+

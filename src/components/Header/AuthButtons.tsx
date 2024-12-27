@@ -14,9 +14,16 @@ export const AuthButtons: React.FC = () => {
       ) : (
         <button
           onClick={() => loginWithRedirect()}
-          className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700"
+          className="template-btn btn-style-two bg-black"
         >
-          {intl.formatMessage({ id: 'auth.login' })}
+          <span className="btn-wrap">
+            <span className="text-one text-white">
+              {intl.formatMessage({ id: 'auth.login' })}
+            </span>
+            <span className="text-two text-white">
+              {intl.formatMessage({ id: 'auth.login' })}
+            </span>
+          </span>
         </button>
       )}
     </div>
