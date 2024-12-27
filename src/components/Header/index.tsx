@@ -11,8 +11,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onLanguageChange, currentLanguage }) => {
   return (
-    <header className="bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="bg-white shadow-sm py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         <div className="flex justify-between items-center h-16">
           <Logo />
           <Navigation />

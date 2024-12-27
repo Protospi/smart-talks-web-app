@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IntlProvider } from 'react-intl';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { Header } from './components/Header/index';
