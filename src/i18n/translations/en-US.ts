@@ -98,5 +98,15 @@ export default {
   'services.health.item3': 'Initial triage and intelligent routing',
   'services.health.button': 'Learn more',
   'clients.label': 'Clients',
-  'clients.title': 'Who generates smarter conversations.'
+  'clients.title': 'Who generates smarter conversations.',
+  'modules.title': 'Know our',
+  'modules.titleHighlight': 'Modules and Features',
+  'modules.description': 'Discover how our advanced AI modules can transform your business communication',
+  'modules.learnMore': 'Learn more',
+  'modules.genAI.title': 'genAI and Conversational Agents',
+  'modules.genAI.description': 'Leverage the power of generative AI to create natural and context-aware conversations that drive results.',
+  'modules.genAI.item1': 'Advanced natural language processing capabilities',
+  'modules.genAI.item2': 'Context-aware responses and personalization',
+  'modules.genAI.item3': 'Multi-language support with cultural awareness',
+  'modules.genAI.button': 'Learn more',
 }; 

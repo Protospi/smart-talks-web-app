@@ -4,7 +4,7 @@ import { BigNumbers } from './BigNumbers';
 import { Features } from './Features';
 import { Services } from './Services';
 import { Clients } from './Clients';
-
+import { Modules } from './Modules';
 export const Home: React.FC = () => {
   return (
     <main>
@@ -13,6 +13,7 @@ export const Home: React.FC = () => {
       <Features />
       <Services />
       <Clients />
+      <Modules />
     </main>
   );
 }; 

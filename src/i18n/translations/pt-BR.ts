@@ -98,5 +98,15 @@ export default {
   'services.health.item3': 'Triagem inicial e direcionamento inteligente',
   'services.health.button': 'Saiba mais',
   'clients.label': 'Clientes',
-  'clients.title': 'Quem gera conversas mais inteligentes.'
+  'clients.title': 'Quem gera conversas mais inteligentes.',
+  'modules.title': 'Conheça nossos',
+  'modules.titleHighlight': 'Módulos e Funcionalidades',
+  'modules.description': 'Descubra como nossos módulos de IA avançada podem transformar a comunicação do seu negócio',
+  'modules.learnMore': 'Saiba mais',
+  'modules.genAI.title': 'genAI e Agentes conversacionais',
+  'modules.genAI.description': 'Aproveite o poder da IA generativa para criar conversas naturais e contextualizadas que geram resultados.',
+  'modules.genAI.item1': 'Capacidades avançadas de processamento de linguagem natural',
+  'modules.genAI.item2': 'Respostas contextualizadas e personalização',
+  'modules.genAI.item3': 'Suporte multi-idioma com consciência cultural',
+  'modules.genAI.button': 'Saiba mais',
 }; 
