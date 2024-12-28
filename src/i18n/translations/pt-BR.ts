@@ -17,5 +17,19 @@ export default {
   'hero.feature3': 'Agentes conversacionais com habilidades avançadas',
   'header.bookDemo': 'Agendar Demonstração',
   'auth.logout': 'Sair',
-  'auth.login': 'Entrar'
+  'auth.login': 'Entrar',
+  'bigNumbers.title': 'O novo padrão em engajamento com o cliente.',
+  'bigNumbers.subtitle': 'Escolha a SmartTalks.',
+  'bigNumbers.autoService': 'Auto-atendimento',
+  'bigNumbers.autoServiceDesc': 'Taxa de atendimento automatizado',
+  'bigNumbers.afterHours': 'Atendimento fora do horário comercial',
+  'bigNumbers.afterHoursDesc': 'Suporte fora do expediente',
+  'bigNumbers.messages': 'Mensagens trocadas',
+  'bigNumbers.messagesDesc': 'Total de mensagens processadas',
+  'bigNumbers.users': 'Usuários únicos atendidos',
+  'bigNumbers.usersDesc': 'Clientes individuais atendidos',
+  'bigNumbers.years': 'Anos no mercado',
+  'bigNumbers.yearsDesc': 'Experiência atendendo clientes',
+  'bigNumbers.interactions': 'Interações por dia',
+  'bigNumbers.interactionsDesc': 'Engajamentos diários com clientes'
 }; 

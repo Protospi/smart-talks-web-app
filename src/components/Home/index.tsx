@@ -1,11 +1,12 @@
 import React from 'react';
 import { Hero } from './Hero';
+import { BigNumbers } from './BigNumbers';
 
 export const Home: React.FC = () => {
   return (
-    <div className="space-y-16">
+    <main>
       <Hero />
-      {/* Other sections will be added here */}
-    </div>
+      <BigNumbers />
+    </main>
   );
 }; 

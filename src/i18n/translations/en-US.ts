@@ -17,5 +17,19 @@ export default {
   'hero.feature3': 'Conversational agents with advanced skills',
   'header.bookDemo': 'Book a Demo',
   'auth.logout': 'Logout',
-  'auth.login': 'Login'
+  'auth.login': 'Login',
+  'bigNumbers.title': 'The new standard in customer engagement.',
+  'bigNumbers.subtitle': 'Choose SmartTalks.',
+  'bigNumbers.autoService': 'Self-service',
+  'bigNumbers.autoServiceDesc': 'Automated customer service rate',
+  'bigNumbers.afterHours': 'After-hours service',
+  'bigNumbers.afterHoursDesc': 'Support outside business hours',
+  'bigNumbers.messages': 'Messages exchanged',
+  'bigNumbers.messagesDesc': 'Total messages processed',
+  'bigNumbers.users': 'Unique users served',
+  'bigNumbers.usersDesc': 'Individual customers helped',
+  'bigNumbers.years': 'Years in the market',
+  'bigNumbers.yearsDesc': 'Experience serving customers',
+  'bigNumbers.interactions': 'Interactions per day',
+  'bigNumbers.interactionsDesc': 'Daily customer engagements'
 }; 
