@@ -8,6 +8,7 @@ import { Modules } from './Modules';
 import { Multichannel } from './Multichannel';
 import { Sdm } from './Sdm';
 import { Integrations } from './Integrations';
+import { Prices } from './Prices';
 
 export const Home: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ export const Home: React.FC = () => {
       <Multichannel />
       <Sdm />
       <Integrations />
+      <Prices />
     </main>
   );
 }; 

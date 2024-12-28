@@ -121,6 +121,14 @@ export default {
   'sdm.item2': 'Recopilación y organización automatizada de datos en todos los canales',
   'sdm.item3': 'Embudos de venta personalizados basados en el comportamiento y preferencias del cliente',
   'sdm.button': 'Saber más',
-  'integrations.title': 'Nuestras Integraciones',
-  'integrations.subtitle': 'Integra con tus herramientas favoritas'
+  'integrations.title': 'Parceiros e Integrações',
+  'integrations.subtitle': 'El poder de las integraciones elevado a la máxima potencia\ncon los mejores socios y sistemas',
+  'prices.tag': 'Planes',
+  'prices.title': 'Consulta los planes disponibles',
+  'prices.features.wordLimit': 'Hasta 10.000 palabras',
+  'prices.features.basicTools': 'Acceso a herramientas básicas',
+  'prices.features.aiCopywriting': 'Acceso a herramientas de IA copywriting',
+  'prices.features.emailSupport': 'Solo soporte por email',
+  'prices.features.advanceTools': 'Más de 700 herramientas avanzadas',
+  'prices.startTrial': 'Comenzar prueba gratis de 1 mes'
 }; 

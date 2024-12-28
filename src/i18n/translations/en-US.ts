@@ -121,6 +121,14 @@ export default {
   'sdm.item2': 'Automated data collection and organization across all channels',
   'sdm.item3': 'Personalized sales funnels based on customer behavior and preferences',
   'sdm.button': 'Learn more',
-  'integrations.title': 'Our Integrations',
-  'integrations.subtitle': 'Integrate with your favorite tools'
+  'integrations.title': 'Partners',
+  'integrations.subtitle': 'The power of integrations elevated to maximum potential\nwith the best partners and systems',
+  'prices.tag': 'Plans',
+  'prices.title': 'Check available plans',
+  'prices.features.wordLimit': 'Up to 10,000 words',
+  'prices.features.basicTools': 'Access to basic tools',
+  'prices.features.aiCopywriting': 'Access to AI copywriting tools',
+  'prices.features.emailSupport': 'Email support only',
+  'prices.features.advanceTools': 'Advance 700+ tools',
+  'prices.startTrial': 'Start 1 month free trail',
 }; 

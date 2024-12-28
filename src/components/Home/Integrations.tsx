@@ -11,7 +11,7 @@ export const Integrations: React.FC = () => {
           <h2 className="text-3xl font-bold text-white">
             {intl.formatMessage({ id: 'integrations.title' })}
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-lg text-gray-300 whitespace-pre-line">
             {intl.formatMessage({ id: 'integrations.subtitle' })}
           </p>
         </div>
