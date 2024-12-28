@@ -114,5 +114,11 @@ export default {
   'multichannel.item1': 'Bandeja de entrada unificada para todos los canales con enrutamiento inteligente',
   'multichannel.item2': 'Respuestas automatizadas y chatbots en todas las plataformas',
   'multichannel.item3': 'Análisis y seguimiento del rendimiento en tiempo real',
-  'multichannel.button': 'Saber más'
+  'multichannel.button': 'Saber más',
+  'sdm.title': 'SDM y embudos personalizados',
+  'sdm.description': 'Gestión Inteligente de Datos que revoluciona la forma en que manejas la información del cliente. Nuestro sistema integrado de CRM y asistente digital proporciona almacenamiento y recuperación inteligente de datos para experiencias mejoradas.',
+  'sdm.item1': 'CRM avanzado con insights impulsados por IA y segmentación de clientes',
+  'sdm.item2': 'Recopilación y organización automatizada de datos en todos los canales',
+  'sdm.item3': 'Embudos de venta personalizados basados en el comportamiento y preferencias del cliente',
+  'sdm.button': 'Saber más'
 }; 

@@ -114,5 +114,11 @@ export default {
   'multichannel.item1': 'Unified inbox for all channels with smart routing',
   'multichannel.item2': 'Automated responses and chatbots across platforms',
   'multichannel.item3': 'Real-time analytics and performance tracking',
-  'multichannel.button': 'Learn more'
+  'multichannel.button': 'Learn more',
+  'sdm.title': 'SDM and Personalized Funnels',
+  'sdm.description': 'Smart Data Management that revolutionizes how you handle customer information. Our integrated CRM and digital assistant system provides intelligent data storage and retrieval for enhanced customer experiences.',
+  'sdm.item1': 'Advanced CRM with AI-powered insights and customer segmentation',
+  'sdm.item2': 'Automated data collection and organization across all channels',
+  'sdm.item3': 'Personalized sales funnels based on customer behavior and preferences',
+  'sdm.button': 'Learn more'
 }; 
