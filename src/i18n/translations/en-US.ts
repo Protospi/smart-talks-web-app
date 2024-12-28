@@ -31,5 +31,19 @@ export default {
   'bigNumbers.years': 'Years in the market',
   'bigNumbers.yearsDesc': 'Experience serving customers',
   'bigNumbers.interactions': 'Interactions per day',
-  'bigNumbers.interactionsDesc': 'Daily customer engagements'
+  'bigNumbers.interactionsDesc': 'Daily customer engagements',
+  'features.title': 'How we make brand communication',
+  'features.titleHighlight': 'smarter',
+  'features.insights.title': 'Adaptive Insights Through Real-Time Data',
+  'features.insights.description': 'Conversations are updated with real-time data using various APIs for more relevant communication.',
+  'features.management.title': 'Simplified Centralized Management',
+  'features.management.description': 'Different channels, journeys, units and teams in a single account with deep permission levels for efficient collaboration.',
+  'features.journey.title': 'Holistic Communication Journeys',
+  'features.journey.description': 'Our pre-designed journey models offer easy personalization with your specific information.',
+  'features.security.title': 'Security Stronghold',
+  'features.security.description': 'Your data and your customers\' data are protected through the use of the best information security technologies and practices, including RSA cryptography.',
+  'features.hybrid.title': 'The Art of Hybrid Experience',
+  'features.hybrid.description': 'We perfectly combine automated flows with human interaction for exceptional engagement.',
+  'features.resolution.title': 'Resolution Mindset',
+  'features.resolution.description': 'Our journeys reduce the need for human intervention by 80%, allowing agents to focus on critical cases.'
 }; 

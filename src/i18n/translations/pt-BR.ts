@@ -31,5 +31,19 @@ export default {
   'bigNumbers.years': 'Anos no mercado',
   'bigNumbers.yearsDesc': 'Experiência atendendo clientes',
   'bigNumbers.interactions': 'Interações por dia',
-  'bigNumbers.interactionsDesc': 'Engajamentos diários com clientes'
+  'bigNumbers.interactionsDesc': 'Engajamentos diários com clientes',
+  'features.title': 'Como tornamos a comunicação das marcas',
+  'features.titleHighlight': 'mais inteligentes',
+  'features.insights.title': 'Insights adaptativos por meio de dados em tempo real',
+  'features.insights.description': 'As conversas são atualizadas com dados em tempo real usando várias APIs para uma comunicação mais relevante.',
+  'features.management.title': 'Gestão Centralizada Simplificada',
+  'features.management.description': 'Diferentes canais, jornadas, unidades e times em uma única conta com níveis de permissão profundos para uma colaboração eficiente.',
+  'features.journey.title': 'Jornadas de Comunicação Holística',
+  'features.journey.description': 'Nossos modelos de jornada pré-concebidos oferecem fácil personalização com suas informações específicas.',
+  'features.security.title': 'Baluarte de Segurança',
+  'features.security.description': 'Os seus dados e os dados dos seus clientes são protegidos através da utilização das melhores tecnologias e práticas de segurança da informação, incluindo criptografia RSA.',
+  'features.hybrid.title': 'A arte da experiência híbrida',
+  'features.hybrid.description': 'Combinamos perfeitamente fluxos automatizados com interação humana para um envolvimento excepcional.',
+  'features.resolution.title': 'Mentalidade de Resolução',
+  'features.resolution.description': 'As nossas jornadas reduzem em 80% a necessidade de intervenção humana, permitindo que os agentes se concentrem em casos críticos.'
 }; 
