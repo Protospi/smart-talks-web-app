@@ -24,7 +24,7 @@ function App() {
             onLanguageChange={(newLang: SupportedLocales) => setLanguage(newLang)} 
             currentLanguage={language} 
           />
-          <main>
+          <main className="pt-24">
             <Home />
           </main>
         </div>
