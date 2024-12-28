@@ -10,6 +10,7 @@ import { Sdm } from './Sdm';
 import { Integrations } from './Integrations';
 import { Prices } from './Prices';
 import { Contact } from './Contact';
+import { Footer } from './Footer';
 
 export const Home: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ export const Home: React.FC = () => {
       <Integrations />
       <Prices />
       <Contact />
+      <Footer />
     </main>
   );
 }; 

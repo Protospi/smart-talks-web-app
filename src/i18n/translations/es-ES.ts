@@ -144,5 +144,6 @@ export default {
   'home.contact.form.subjects.sales': 'Ventas',
   'home.contact.form.subjects.other': 'Otro',
   'home.contact.form.message': 'Escribe tu mensaje aquí*',
-  'home.contact.form.submit': 'Enviar'
+  'home.contact.form.submit': 'Enviar',
+  'footer.copyright': 'SmartTalks.ai Todos los derechos reservados.'
 }; 
