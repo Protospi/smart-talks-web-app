@@ -96,5 +96,7 @@ export default {
   'services.health.item1': 'Automated appointment scheduling',
   'services.health.item2': 'Patient follow-up and reminders',
   'services.health.item3': 'Initial triage and intelligent routing',
-  'services.health.button': 'Learn more'
+  'services.health.button': 'Learn more',
+  'clients.label': 'Clients',
+  'clients.title': 'Who generates smarter conversations.'
 }; 

@@ -96,5 +96,7 @@ export default {
   'services.health.item1': 'Programación automatizada de citas',
   'services.health.item2': 'Seguimiento y recordatorios para pacientes',
   'services.health.item3': 'Triaje inicial y enrutamiento inteligente',
-  'services.health.button': 'Saber más'
+  'services.health.button': 'Saber más',
+  'clients.label': 'Clientes',
+  'clients.title': 'Quien genera conversaciones más inteligentes.'
 }; 

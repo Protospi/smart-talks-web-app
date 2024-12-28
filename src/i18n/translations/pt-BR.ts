@@ -96,5 +96,7 @@ export default {
   'services.health.item1': 'Agendamento de consultas automatizado',
   'services.health.item2': 'Acompanhamento de pacientes e lembretes',
   'services.health.item3': 'Triagem inicial e direcionamento inteligente',
-  'services.health.button': 'Saiba mais'
+  'services.health.button': 'Saiba mais',
+  'clients.label': 'Clientes',
+  'clients.title': 'Quem gera conversas mais inteligentes.'
 }; 

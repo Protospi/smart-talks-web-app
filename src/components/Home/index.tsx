@@ -3,6 +3,8 @@ import { Hero } from './Hero';
 import { BigNumbers } from './BigNumbers';
 import { Features } from './Features';
 import { Services } from './Services';
+import { Clients } from './Clients';
+
 export const Home: React.FC = () => {
   return (
     <main>
@@ -10,6 +12,7 @@ export const Home: React.FC = () => {
       <BigNumbers />
       <Features />
       <Services />
+      <Clients />
     </main>
   );
 }; 
