@@ -3,10 +3,11 @@ import { Logo } from './Logo';
 import { Navigation } from './Navigation';
 import { LanguageSelector } from './LanguageSelector';
 import { AuthButtons } from './AuthButtons';
+import { SupportedLocales } from '../../i18n/translations';
 
 interface HeaderProps {
-  onLanguageChange: (language: string) => void;
-  currentLanguage: string;
+  onLanguageChange: (language: SupportedLocales) => void;
+  currentLanguage: SupportedLocales;
 }
 
 export const Header: React.FC<HeaderProps> = ({ onLanguageChange, currentLanguage }) => {

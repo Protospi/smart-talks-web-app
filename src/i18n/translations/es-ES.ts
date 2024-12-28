@@ -1,14 +1,21 @@
-export const esES = {
+export default {
   'nav.home': 'Inicio',
-  'nav.about': 'Acerca',
+  'nav.about': 'Sobre',
   'nav.products': 'Productos',
   'nav.solutions': 'Soluciones',
   'nav.cases': 'Casos',
   'nav.plans': 'Planes',
   'nav.contact': 'Contacto',
-  'auth.login': 'Iniciar sesión',
+  'nav.login': 'Login',
+  'hero.title': 'Conversaciones inteligentes que generan resultados y',
+  'hero.titleHighlight': 'venden',
+  'hero.subtitle': 'La plataforma más completa de marketing conversacional que concentra la mejor IA en varios canales.',
+  'hero.tryNow': '¡Prueba ahora!',
+  'hero.watchDemo': 'Ver demostración',
+  'hero.feature1': 'Automatización y humanización trabajando juntos.',
+  'hero.feature2': 'Estructura de datos personalizada.',
+  'hero.feature3': 'Agentes conversacionales con habilidades avanzadas',
+  'header.bookDemo': 'Programar Demostración',
   'auth.logout': 'Cerrar sesión',
-  'hero.title': 'Transforma tu Negocio con IA',
-  'hero.subtitle': 'Soluciones inteligentes para empresas modernas',
-  'hero.cta': 'Programar Demostración',
-};
+  'auth.login': 'Entrar'
+}; 

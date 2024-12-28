@@ -1,14 +1,21 @@
-export const ptBR = {
+export default {
   'nav.home': 'Início',
   'nav.about': 'Sobre',
   'nav.products': 'Produtos',
   'nav.solutions': 'Soluções',
-  'nav.cases': 'Cases',
+  'nav.cases': 'Casos',
   'nav.plans': 'Planos',
   'nav.contact': 'Contato',
-  'auth.login': 'Entrar',
+  'nav.login': 'Login',
+  'hero.title': 'Conversas inteligentes que geram resultados e',
+  'hero.titleHighlight': 'vendem',
+  'hero.subtitle': 'A plataforma mais completa de marketing conversacional que concentra a melhor IA em vários canais.',
+  'hero.tryNow': 'Experimente agora!',
+  'hero.watchDemo': 'Assistir demonstração',
+  'hero.feature1': 'Automação e humanização trabalhando juntos.',
+  'hero.feature2': 'Estrutura de dados personalizada.',
+  'hero.feature3': 'Agentes conversacionais com habilidades avançadas',
+  'header.bookDemo': 'Agendar Demonstração',
   'auth.logout': 'Sair',
-  'hero.title': 'Transforme Seu Negócio com IA',
-  'hero.subtitle': 'Soluções inteligentes para empresas modernas',
-  'hero.cta': 'Agendar Demonstração',
-};
+  'auth.login': 'Entrar'
+}; 

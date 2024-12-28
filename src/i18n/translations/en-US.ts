@@ -1,4 +1,4 @@
-export const enUS = {
+export default {
   'nav.home': 'Home',
   'nav.about': 'About',
   'nav.products': 'Products',
@@ -6,9 +6,16 @@ export const enUS = {
   'nav.cases': 'Cases',
   'nav.plans': 'Plans',
   'nav.contact': 'Contact',
-  'auth.login': 'Log in',
-  'auth.logout': 'Log out',
-  'hero.title': 'Transform Your Business with AI',
-  'hero.subtitle': 'Intelligent solutions for modern enterprises',
-  'hero.cta': 'Schedule a Demo',
-};
+  'nav.login': 'Login',
+  'hero.title': 'Intelligent conversations that generate results and',
+  'hero.titleHighlight': 'sell',
+  'hero.subtitle': 'The most complete AI First platform that concentrates the best of conversational marketing across multiple channels.',
+  'hero.tryNow': 'Try it right now!',
+  'hero.watchDemo': 'Watch demo',
+  'hero.feature1': 'Automation and humanization working together.',
+  'hero.feature2': 'Custom data structure.',
+  'hero.feature3': 'Conversational agents with advanced skills',
+  'header.bookDemo': 'Book a Demo',
+  'auth.logout': 'Logout',
+  'auth.login': 'Login'
+}; 
