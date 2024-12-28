@@ -4,7 +4,7 @@ export function Contact() {
   const intl = useIntl();
 
   return (
-    <section className="bg-[#0A0B1A] py-16">
+    <section className="bg-[#1B1E32] py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
@@ -46,7 +46,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="bg-[#141B3D] p-8 rounded-2xl">
+          <div className="bg-[#2A2D45] p-8 rounded-2xl">
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
