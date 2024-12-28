@@ -130,5 +130,19 @@ export default {
   'prices.features.aiCopywriting': 'Acceso a herramientas de IA copywriting',
   'prices.features.emailSupport': 'Solo soporte por email',
   'prices.features.advanceTools': 'Más de 700 herramientas avanzadas',
-  'prices.startTrial': 'Comenzar prueba gratis de 1 mes'
+  'prices.startTrial': 'Comenzar prueba gratis de 1 mes',
+  'home.contact.label': 'CONTACTO',
+  'home.contact.title': '¡No te quedes sin hablar con nosotros!',
+  'home.contact.highlight': 'detalles',
+  'home.contact.titleEnd': 'aquí',
+  'home.contact.description': '¡No te quedes sin hablar con nosotros!',
+  'home.contact.form.name': 'Nombre',
+  'home.contact.form.email': 'Email', 
+  'home.contact.form.phone': 'Teléfono',
+  'home.contact.form.subject': 'Selecciona un asunto',
+  'home.contact.form.subjects.support': 'Soporte técnico',
+  'home.contact.form.subjects.sales': 'Ventas',
+  'home.contact.form.subjects.other': 'Otro',
+  'home.contact.form.message': 'Escribe tu mensaje aquí*',
+  'home.contact.form.submit': 'Enviar'
 }; 

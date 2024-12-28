@@ -9,6 +9,7 @@ import { Multichannel } from './Multichannel';
 import { Sdm } from './Sdm';
 import { Integrations } from './Integrations';
 import { Prices } from './Prices';
+import { Contact } from './Contact';
 
 export const Home: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ export const Home: React.FC = () => {
       <Sdm />
       <Integrations />
       <Prices />
+      <Contact />
     </main>
   );
 }; 

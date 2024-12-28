@@ -131,4 +131,18 @@ export default {
   'prices.features.emailSupport': 'Apenas suporte por email',
   'prices.features.advanceTools': 'Mais de 700 ferramentas avançadas',
   'prices.startTrial': 'Começar teste grátis de 1 mês',
+  'home.contact.label': 'CONTATO',
+  'home.contact.title': 'Fique à vontade para solicitar mais',
+  'home.contact.highlight': 'detalhes',
+  'home.contact.titleEnd': 'aqui',
+  'home.contact.description': 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa Aliquam in hendrerit urna.',
+  'home.contact.form.name': 'Nome',
+  'home.contact.form.email': 'Email',
+  'home.contact.form.phone': 'Telefone',
+  'home.contact.form.subject': 'Selecione um assunto',
+  'home.contact.form.subjects.support': 'Suporte Técnico',
+  'home.contact.form.subjects.sales': 'Vendas',
+  'home.contact.form.subjects.other': 'Outro',
+  'home.contact.form.message': 'Escreva sua mensagem aqui*',
+  'home.contact.form.submit': 'Enviar'
 }; 

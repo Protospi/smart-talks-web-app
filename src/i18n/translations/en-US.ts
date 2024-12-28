@@ -131,4 +131,18 @@ export default {
   'prices.features.emailSupport': 'Email support only',
   'prices.features.advanceTools': 'Advance 700+ tools',
   'prices.startTrial': 'Start 1 month free trail',
+  'home.contact.label': 'CONTACT',
+  'home.contact.title': 'Feel free to ask for more',
+  'home.contact.highlight': 'details',
+  'home.contact.titleEnd': 'here',
+  'home.contact.description': 'Get in touch with us for any questions or inquiries. We\'re here to help you.',
+  'home.contact.form.name': 'Name',
+  'home.contact.form.email': 'Email', 
+  'home.contact.form.phone': 'Phone',
+  'home.contact.form.subject': 'Select a subject',
+  'home.contact.form.subjects.support': 'Technical Support',
+  'home.contact.form.subjects.sales': 'Sales',
+  'home.contact.form.subjects.other': 'Other',
+  'home.contact.form.message': 'Write your message here*',
+  'home.contact.form.submit': 'Send'
 }; 
