@@ -120,5 +120,7 @@ export default {
   'sdm.item1': 'Advanced CRM with AI-powered insights and customer segmentation',
   'sdm.item2': 'Automated data collection and organization across all channels',
   'sdm.item3': 'Personalized sales funnels based on customer behavior and preferences',
-  'sdm.button': 'Learn more'
+  'sdm.button': 'Learn more',
+  'integrations.title': 'Our Integrations',
+  'integrations.subtitle': 'Integrate with your favorite tools'
 }; 

@@ -120,5 +120,7 @@ export default {
   'sdm.item1': 'CRM avanzado con insights impulsados por IA y segmentación de clientes',
   'sdm.item2': 'Recopilación y organización automatizada de datos en todos los canales',
   'sdm.item3': 'Embudos de venta personalizados basados en el comportamiento y preferencias del cliente',
-  'sdm.button': 'Saber más'
+  'sdm.button': 'Saber más',
+  'integrations.title': 'Nuestras Integraciones',
+  'integrations.subtitle': 'Integra con tus herramientas favoritas'
 }; 

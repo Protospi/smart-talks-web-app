@@ -7,6 +7,7 @@ import { Clients } from './Clients';
 import { Modules } from './Modules';
 import { Multichannel } from './Multichannel';
 import { Sdm } from './Sdm';
+import { Integrations } from './Integrations';
 
 export const Home: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ export const Home: React.FC = () => {
       <Modules />
       <Multichannel />
       <Sdm />
+      <Integrations />
     </main>
   );
 }; 
