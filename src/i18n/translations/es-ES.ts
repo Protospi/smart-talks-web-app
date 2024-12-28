@@ -108,5 +108,11 @@ export default {
   'modules.genAI.item1': 'Capacidades avanzadas de procesamiento del lenguaje natural',
   'modules.genAI.item2': 'Respuestas contextualizadas y personalización',
   'modules.genAI.item3': 'Soporte multilingüe con conciencia cultural',
-  'modules.genAI.button': 'Saber más'
+  'modules.genAI.button': 'Saber más',
+  'multichannel.title': 'Multicanal WhatsApp, Instagram, Messenger, E-mail, Widget',
+  'multichannel.description': 'Interactúa con tus clientes dondequiera que estén. Nuestra plataforma se integra perfectamente con todos los principales canales de comunicación, proporcionando una experiencia consistente en todos los puntos de contacto.',
+  'multichannel.item1': 'Bandeja de entrada unificada para todos los canales con enrutamiento inteligente',
+  'multichannel.item2': 'Respuestas automatizadas y chatbots en todas las plataformas',
+  'multichannel.item3': 'Análisis y seguimiento del rendimiento en tiempo real',
+  'multichannel.button': 'Saber más'
 }; 

@@ -109,4 +109,10 @@ export default {
   'modules.genAI.item2': 'Context-aware responses and personalization',
   'modules.genAI.item3': 'Multi-language support with cultural awareness',
   'modules.genAI.button': 'Learn more',
+  'multichannel.title': 'Multichannel WhatsApp, Instagram, Messenger, E-mail, Widget',
+  'multichannel.description': 'Engage with your customers wherever they are. Our platform integrates seamlessly with all major communication channels, providing a consistent experience across every touchpoint.',
+  'multichannel.item1': 'Unified inbox for all channels with smart routing',
+  'multichannel.item2': 'Automated responses and chatbots across platforms',
+  'multichannel.item3': 'Real-time analytics and performance tracking',
+  'multichannel.button': 'Learn more'
 }; 
