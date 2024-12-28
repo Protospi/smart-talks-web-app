@@ -3,6 +3,7 @@ import { IntlProvider } from 'react-intl';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { Header } from './components/Header/index';
 import { Home } from './components/Home';
+import ScrollProgress from './components/ScrollProgress';
 import { messages, SupportedLocales } from './i18n/translations';
 import { auth0Config } from './config/auth';
 
@@ -27,6 +28,7 @@ function App() {
           <main className="pt-24">
             <Home />
           </main>
+          <ScrollProgress />
         </div>
       </IntlProvider>
     </Auth0Provider>

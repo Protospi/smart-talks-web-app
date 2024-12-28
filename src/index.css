@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add these styles to your existing CSS */
+.stroke-gray-200 {
+  stroke: #E5E7EB;
+}
+
+.stroke-purple-500 {
+  stroke: #6467F2;
+}
+
+.fill-purple-500 {
+  fill: #6467F2;
+}
