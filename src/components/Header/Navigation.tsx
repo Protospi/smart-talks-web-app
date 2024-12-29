@@ -1,30 +1,45 @@
-import React, { useState } from 'react';
 import { useIntl } from 'react-intl';
+import { Link, useLocation } from 'react-router-dom';
 
-const navItems = ['Home', 'About', 'Products', 'Solutions', 'Cases', 'Plans', 'Contact'];
-
-export const Navigation: React.FC = () => {
+export function Navigation() {
   const intl = useIntl();
-  const [activeItem, setActiveItem] = useState('Home');
+  const location = useLocation();
 
-  const handleClick = (item: string) => {
-    setActiveItem(item);
-    const element = document.getElementById(item.toLowerCase());
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="hidden md:flex space-x-8">
-      {navItems.map((item) => (
-        <button
-          key={item}
-          className={`text-gray-700 hover:text-indigo-600 px-3 py-2 text-base font-bold
-            ${activeItem === item ? 'text-pink-500' : ''}`}
-          onClick={() => handleClick(item)}
-        >
-          {intl.formatMessage({ id: `nav.${item.toLowerCase()}` })}
-        </button>
-      ))}
+    <nav className="hidden md:flex items-center gap-8">
+      <Link
+        to="/"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
+        {intl.formatMessage({ id: 'nav.home' })}
+      </Link>
+      <Link
+        to="/about"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/about') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
+        {intl.formatMessage({ id: 'nav.about' })}
+      </Link>
+      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+        {intl.formatMessage({ id: 'nav.products' })}
+      </a>
+      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+        {intl.formatMessage({ id: 'nav.solutions' })}
+      </a>
+      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+        {intl.formatMessage({ id: 'nav.cases' })}
+      </a>
+      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+        {intl.formatMessage({ id: 'nav.plans' })}
+      </a>
+      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+        {intl.formatMessage({ id: 'nav.contact' })}
+      </a>
     </nav>
   );
-};
+}
