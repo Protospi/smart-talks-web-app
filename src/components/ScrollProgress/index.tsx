@@ -24,7 +24,7 @@ export default function ScrollProgress() {
 
   return (
     <div
-      className={`fixed bottom-8 left-16 h-14 w-14 cursor-pointer transition-opacity duration-300 z-50 ${
+      className={`fixed bottom-8 right-8 h-14 w-14 cursor-pointer transition-opacity duration-300 z-50 ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       onClick={scrollToTop}
@@ -34,15 +34,15 @@ export default function ScrollProgress() {
           className="transform -rotate-90 w-full h-full absolute"
           width="100%"
           height="100%"
-          viewBox="-8 -8 116 116"
+          viewBox="-2 -2 104 104"
         >
           <circle
             cx="50"
             cy="50"
-            r="46"
+            r="44"
             className="stroke-gray-300"
             fill="none"
-            strokeWidth="4.5"
+            strokeWidth="6"
             style={{
               filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'
             }}
@@ -53,21 +53,19 @@ export default function ScrollProgress() {
           className="transform -rotate-90 w-full h-full absolute top-0 left-0"
           width="100%"
           height="100%"
-          viewBox="-8 -8 116 116"
+          viewBox="-2 -2 104 104"
         >
           <defs>
             <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#8B6AFF" />
-              <stop offset="100%" stopColor="#7B5AFF" />
+              <stop offset="0%" stopColor="#9B7AFF" />
+              <stop offset="50%" stopColor="#7B5AFF" />
+              <stop offset="100%" stopColor="#6B4AFF" />
             </linearGradient>
-            <filter id="progressGlow">
-              <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-              <feOffset dx="0" dy="0" result="offsetBlur"/>
-              <feMerge>
-                <feMergeNode in="offsetBlur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
+            <linearGradient id="lightEffect" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="rgba(255,255,255,0.5)" />
+              <stop offset="50%" stopColor="rgba(255,255,255,0)" />
+              <stop offset="100%" stopColor="rgba(0,0,0,0.1)" />
+            </linearGradient>
           </defs>
           <circle
             cx="50"
@@ -75,13 +73,26 @@ export default function ScrollProgress() {
             r="46"
             style={{
               stroke: 'url(#progressGradient)',
-              filter: 'url(#progressGlow) drop-shadow(0 0 2px rgba(123, 90, 255, 0.6))',
               transition: 'stroke-dashoffset 10ms linear',
               strokeDasharray: '289.027, 289.027',
               strokeDashoffset: `${289.027 - (progress * 289.027) / 100}`,
               fill: 'none',
-              strokeWidth: '4.5',
+              strokeWidth: '4',
               strokeLinecap: 'round'
+            }}
+          />
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            style={{
+              stroke: 'url(#lightEffect)',
+              strokeDasharray: '289.027, 289.027',
+              strokeDashoffset: `${289.027 - (progress * 289.027) / 100}`,
+              fill: 'none',
+              strokeWidth: '4',
+              strokeLinecap: 'round',
+              mixBlendMode: 'soft-light'
             }}
           />
         </svg>
@@ -92,10 +103,6 @@ export default function ScrollProgress() {
             width="22"
             height="22"
             viewBox="0 0 24 24"
-            className="drop-shadow-[0_2px_3px_rgba(123,90,255,0.4)]"
-            style={{
-              filter: 'drop-shadow(0 0 1px rgba(123, 90, 255, 0.5))'
-            }}
           >
             <path
               d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
