@@ -33,12 +33,22 @@ export function Navigation() {
       >
         {intl.formatMessage({ id: 'nav.products' })}
       </Link>
-      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+      <Link
+        to="/solutions"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/solutions') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
         {intl.formatMessage({ id: 'nav.solutions' })}
-      </a>
-      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+      </Link>
+      <Link
+        to="/cases"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/cases') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
         {intl.formatMessage({ id: 'nav.cases' })}
-      </a>
+      </Link>
       <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
         {intl.formatMessage({ id: 'nav.plans' })}
       </a>

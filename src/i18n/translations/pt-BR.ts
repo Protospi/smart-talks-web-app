@@ -171,5 +171,11 @@ export default {
   'about.ceo.description3': 'Temos o prazer de anunciar que o Guide121 se tornou o SmartTalks.ai! Nossa nova identidade representa não apenas um novo nome, mas também um compromisso renovado com a excelência em comunicações e resoluções inteligentes. Estamos focados em continuar trazendo inovação e transformar a interação das marcas com seus clientes criando diálogos claros e resolutivos.',
   'about.ceo.name': 'Clarissa Santiago',
   'about.ceo.role': 'CEO SmartTalks.ai',
-  'products.hero.label': 'Nossos Produtos'
+  'products.hero.label': 'Nossos Produtos',
+  'solutions.hero.label': 'Nossas Soluções',
+  'solutions.hero.breadcrumb.home': 'Início',
+  'solutions.hero.breadcrumb.solutions': 'Soluções',
+  'cases.hero.label': 'Nossos Casos',
+  'cases.hero.breadcrumb.home': 'Início',
+  'cases.hero.breadcrumb.cases': 'Casos',
 }; 

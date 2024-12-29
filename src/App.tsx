@@ -9,7 +9,8 @@ import ScrollProgress from './components/ScrollProgress';
 import { messages, SupportedLocales } from './i18n/translations';
 import { auth0Config } from './config/auth';
 import { ProductsPage as Products } from './components/Products';
-
+import { SolutionsPage as Solutions } from './components/Solutions';
+import { CasesPage as Cases } from './components/Cases';
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBullseye, faLightbulb, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -40,6 +41,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/solutions" element={<Solutions />} />
+              <Route path="/cases" element={<Cases />} />
             </Routes>
             <ScrollProgress />
           </div>
