@@ -76,16 +76,26 @@ export const Info: React.FC = () => {
           </div>
 
           {/* Map or Image */}
-          <div className="relative h-[400px] bg-gray-100 rounded-2xl overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2774556721434!2d-46.66247492374693!3d-23.56447496133612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd063a3a91%3A0x7c95db3daf4f5017!2sAlameda%20Campinas%2C%201070%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001404-200!5e0!3m2!1sen!2sbr!4v1709670124039!5m2!1sen!2sbr"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div className="relative h-[400px] rounded-2xl overflow-hidden">
+            {/* Map iframe */}
+            <div className="relative h-full w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2774556721434!2d-46.66247492374693!3d-23.56447496133612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cd063a3a91%3A0x7c95db3daf4f5017!2sAlameda%20Campinas%2C%201070%20-%20Jardim%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001404-200!5e0!3m2!1sen!2sbr!4v1709670124039!5m2!1sen!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-2xl"
+              ></iframe>
+            </div>
+
+            {/* Purple glow effect container - now above the map */}
+            <div className="absolute inset-0 pointer-events-none">
+              {/* Border gradient effect */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-[#8A6FF9] shadow-[0_0_20px_rgba(138,111,249,0.5)] z-10"></div>
+            </div>
           </div>
         </div>
       </div>
