@@ -49,9 +49,14 @@ export function Navigation() {
       >
         {intl.formatMessage({ id: 'nav.cases' })}
       </Link>
-      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+      <Link
+        to="/plans"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/plans') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
         {intl.formatMessage({ id: 'nav.plans' })}
-      </a>
+      </Link>
       <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
         {intl.formatMessage({ id: 'nav.contact' })}
       </a>

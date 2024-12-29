@@ -177,4 +177,7 @@ export default {
   'cases.hero.label': 'Our Cases',
   'cases.hero.breadcrumb.home': 'Home',
   'cases.hero.breadcrumb.cases': 'Cases',
+  'plans.hero.label': 'Our Plans',
+  'plans.hero.breadcrumb.home': 'Home',
+  'plans.hero.breadcrumb.plans': 'Plans',
 }; 

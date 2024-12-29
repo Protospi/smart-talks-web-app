@@ -178,4 +178,7 @@ export default {
   'cases.hero.label': 'Nuestros Casos',
   'cases.hero.breadcrumb.home': 'Inicio',
   'cases.hero.breadcrumb.cases': 'Casos',
+  'plans.hero.label': 'Nuestros Planes',
+  'plans.hero.breadcrumb.home': 'Inicio',
+  'plans.hero.breadcrumb.plans': 'Planes',
 }; 

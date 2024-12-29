@@ -11,6 +11,7 @@ import { auth0Config } from './config/auth';
 import { ProductsPage as Products } from './components/Products';
 import { SolutionsPage as Solutions } from './components/Solutions';
 import { CasesPage as Cases } from './components/Cases';
+import { PlansPage as Plans } from './components/Plans';
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBullseye, faLightbulb, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -43,6 +44,7 @@ function App() {
               <Route path="/products" element={<Products />} />
               <Route path="/solutions" element={<Solutions />} />
               <Route path="/cases" element={<Cases />} />
+              <Route path="/plans" element={<Plans />} />
             </Routes>
             <ScrollProgress />
           </div>
