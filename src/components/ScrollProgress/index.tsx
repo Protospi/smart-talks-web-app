@@ -24,48 +24,84 @@ export default function ScrollProgress() {
 
   return (
     <div
-      className={`fixed bottom-8 left-8 h-12 w-12 cursor-pointer transition-opacity duration-300 z-50 ${
+      className={`fixed bottom-8 left-16 h-14 w-14 cursor-pointer transition-opacity duration-300 z-50 ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       onClick={scrollToTop}
     >
       <div className="relative w-full h-full">
         <svg
-          className="transform -rotate-90 w-full h-full"
+          className="transform -rotate-90 w-full h-full absolute"
           width="100%"
           height="100%"
-          viewBox="-4 -4 108 108"
+          viewBox="-8 -8 116 116"
         >
-          <path
-            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-            className="stroke-gray-200"
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            className="stroke-gray-300"
             fill="none"
-            strokeWidth="8"
-            strokeLinecap="round"
-          />
-          <path
-            d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+            strokeWidth="4.5"
             style={{
-              stroke: '#7B5AFF',
+              filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'
+            }}
+          />
+        </svg>
+
+        <svg
+          className="transform -rotate-90 w-full h-full absolute top-0 left-0"
+          width="100%"
+          height="100%"
+          viewBox="-8 -8 116 116"
+        >
+          <defs>
+            <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#8B6AFF" />
+              <stop offset="100%" stopColor="#7B5AFF" />
+            </linearGradient>
+            <filter id="progressGlow">
+              <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+              <feOffset dx="0" dy="0" result="offsetBlur"/>
+              <feMerge>
+                <feMergeNode in="offsetBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            style={{
+              stroke: 'url(#progressGradient)',
+              filter: 'url(#progressGlow) drop-shadow(0 0 2px rgba(123, 90, 255, 0.6))',
               transition: 'stroke-dashoffset 10ms linear',
-              strokeDasharray: '307.919, 307.919',
-              strokeDashoffset: `${307.919 - (progress * 307.919) / 100}`,
+              strokeDasharray: '289.027, 289.027',
+              strokeDashoffset: `${289.027 - (progress * 289.027) / 100}`,
               fill: 'none',
-              strokeWidth: 8,
+              strokeWidth: '4.5',
               strokeLinecap: 'round'
             }}
           />
         </svg>
+
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="22"
+            height="22"
             viewBox="0 0 24 24"
-            style={{ fill: '#7B5AFF' }}
+            className="drop-shadow-[0_2px_3px_rgba(123,90,255,0.4)]"
+            style={{
+              filter: 'drop-shadow(0 0 1px rgba(123, 90, 255, 0.5))'
+            }}
           >
-            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" 
-                  transform="rotate(-90 12 12)"/>
+            <path
+              d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+              transform="rotate(-90 12 12)"
+              fill="url(#progressGradient)"
+            />
           </svg>
         </div>
       </div>
