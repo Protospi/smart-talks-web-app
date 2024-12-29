@@ -180,4 +180,11 @@ export default {
   'plans.hero.label': 'Our Plans',
   'plans.hero.breadcrumb.home': 'Home',
   'plans.hero.breadcrumb.plans': 'Plans',
+  'contact.hero.label': 'Contact Us',
+  'contact.hero.breadcrumb.home': 'Home',
+  'contact.hero.breadcrumb.contact': 'Contact',
+  'contact.info.title': 'Get in Touch',
+  'contact.info.description': 'Have questions about our solutions? We\'re here to help! Contact us through any of the channels below.',
+  'contact.info.phone.title': 'Telefone',
+  'contact.info.email.title': 'E-mail',
 }; 

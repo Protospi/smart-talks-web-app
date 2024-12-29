@@ -12,6 +12,8 @@ import { ProductsPage as Products } from './components/Products';
 import { SolutionsPage as Solutions } from './components/Solutions';
 import { CasesPage as Cases } from './components/Cases';
 import { PlansPage as Plans } from './components/Plans';
+import { ContactPage as Contact } from './components/Contact';
+
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBullseye, faLightbulb, faUsers } from '@fortawesome/free-solid-svg-icons';
@@ -45,6 +47,7 @@ function App() {
               <Route path="/solutions" element={<Solutions />} />
               <Route path="/cases" element={<Cases />} />
               <Route path="/plans" element={<Plans />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
             <ScrollProgress />
           </div>

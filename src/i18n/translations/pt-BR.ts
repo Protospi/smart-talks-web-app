@@ -181,4 +181,11 @@ export default {
   'plans.hero.label': 'Nossos Planos',
   'plans.hero.breadcrumb.home': 'Início',
   'plans.hero.breadcrumb.plans': 'Planos',
+  'contact.hero.label': 'Contato',
+  'contact.hero.breadcrumb.home': 'Início',
+  'contact.hero.breadcrumb.contact': 'Contato',
+  'contact.info.title': 'Entre em Contato',
+  'contact.info.description': 'Tem dúvidas sobre nossas soluções? Estamos aqui para ajudar! Entre em contato através de qualquer um dos canais abaixo.',
+  'contact.info.phone.title': 'Telefone',
+  'contact.info.email.title': 'E-mail',
 }; 
