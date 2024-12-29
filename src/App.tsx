@@ -8,6 +8,7 @@ import { AboutPage as About } from './components/About';
 import ScrollProgress from './components/ScrollProgress';
 import { messages, SupportedLocales } from './i18n/translations';
 import { auth0Config } from './config/auth';
+import { ProductsPage as Products } from './components/Products';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -38,6 +39,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/products" element={<Products />} />
             </Routes>
             <ScrollProgress />
           </div>

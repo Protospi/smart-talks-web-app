@@ -170,5 +170,6 @@ export default {
   'about.ceo.description2': 'Vivimos en un momento de rápida evolución, impulsado por la Inteligencia Artificial Generativa, que está revolucionando cómo nos comunicamos e interactuamos. Según datos del Mapa Brasileño de Chatbots, el mercado está en un punto de saturación, con más de 670.000 chatbots creados, y muchos de ellos aún no entregan la experiencia deseada. Ante este escenario, decidimos que era hora de evolucionar y reposicionar nuestra marca.',
   'about.ceo.description3': '¡Nos complace anunciar que Guide121 se ha convertido en SmartTalks.ai! Nuestra nueva identidad representa no solo un nuevo nombre, sino también un compromiso renovado con la excelencia en comunicaciones y soluciones inteligentes. Estamos enfocados en continuar trayendo innovación y transformar la interacción de las marcas con sus clientes creando diálogos claros y resolutivos.',
   'about.ceo.name': 'Clarissa Santiago',
-  'about.ceo.role': 'CEO SmartTalks.ai'
+  'about.ceo.role': 'CEO SmartTalks.ai',
+  'products.hero.label': 'Nuestros Productos'
 }; 

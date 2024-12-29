@@ -25,9 +25,14 @@ export function Navigation() {
       >
         {intl.formatMessage({ id: 'nav.about' })}
       </Link>
-      <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
+      <Link
+        to="/products"
+        className={`text-sm font-bold transition-colors ${
+          isActive('/products') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
+        }`}
+      >
         {intl.formatMessage({ id: 'nav.products' })}
-      </a>
+      </Link>
       <a href="#" className="text-sm font-bold text-black hover:text-[#8A6FF9] transition-colors">
         {intl.formatMessage({ id: 'nav.solutions' })}
       </a>
