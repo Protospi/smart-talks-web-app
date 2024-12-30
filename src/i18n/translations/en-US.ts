@@ -100,7 +100,7 @@ export default {
   'services.health.item3': 'Initial triage and intelligent routing',
   'services.health.button': 'Learn more',
   'clients.label': 'Clients',
-  'clients.title': 'Who generates smarter conversations.',
+  'clients.title': 'Who generates smarter conversations',
   'modules.title': 'Know our',
   'modules.titleHighlight': 'Modules and Features',
   'modules.description': 'Discover how our advanced AI modules can transform your business communication',

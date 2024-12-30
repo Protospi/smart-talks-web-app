@@ -100,7 +100,7 @@ export default {
   'services.health.item3': 'Triagem inicial e direcionamento inteligente',
   'services.health.button': 'Saiba mais',
   'clients.label': 'Clientes',
-  'clients.title': 'Quem gera conversas mais inteligentes.',
+  'clients.title': 'Quem gera conversas mais inteligentes',
   'modules.title': 'Conheça nossos',
   'modules.titleHighlight': 'Módulos e Funcionalidades',
   'modules.description': 'Descubra como nossos módulos de IA avançada podem transformar a comunicação do seu negócio',
