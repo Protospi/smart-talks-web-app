@@ -137,7 +137,7 @@ export default {
   'home.contact.title': 'Fique à vontade para solicitar mais',
   'home.contact.highlight': 'detalhes',
   'home.contact.titleEnd': 'aqui',
-  'home.contact.description': 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa Aliquam in hendrerit urna.',
+  'home.contact.description': 'Entre em contato conosco para qualquer pergunta ou solicitação. Estamos aqui para ajudar você.',
   'home.contact.form.name': 'Nome',
   'home.contact.form.email': 'Email',
   'home.contact.form.phone': 'Telefone',
