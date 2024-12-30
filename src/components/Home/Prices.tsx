@@ -1,8 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 
 export const Prices: React.FC = () => {
   const intl = useIntl();
+  const [displayedTitle, setDisplayedTitle] = useState('');
+  const fullTitle = intl.formatMessage({ id: 'prices.title' });
+
+  useEffect(() => {
+    setDisplayedTitle(''); // Reset title when language changes
+    const timeout = setTimeout(() => {
+      let currentIndex = 0;
+      const intervalId = setInterval(() => {
+        if (currentIndex < fullTitle.length) {
+          setDisplayedTitle(prev => prev + fullTitle[currentIndex]);
+          currentIndex++;
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 100); // Adjust speed of animation here
+
+      return () => clearInterval(intervalId);
+    }, 500); // Small delay before starting animation
+
+    return () => clearTimeout(timeout);
+  }, [fullTitle]);
+
+  // Function to highlight specific words based on language
+  const highlightWord = (text: string) => {
+    const currentLocale = intl.locale;
+    const wordToHighlight = {
+      'en-US': 'plans',
+      'pt-BR': 'planos',
+      'es-ES': 'planes'
+    }[currentLocale] || 'plans';
+
+    // Make the regex case insensitive and handle word boundaries
+    const regex = new RegExp(`\\b(${wordToHighlight})\\b`, 'gi');
+    const parts = text.split(regex);
+    
+    return parts.map((part, index) => {
+      // Check if this part matches our word (case insensitive)
+      if (part.toLowerCase() === wordToHighlight.toLowerCase()) {
+        return <span key={index} className="text-[#6764F2]">{part}</span>;
+      }
+      return part;
+    });
+  };
 
   // Create an array of 4 identical professional plans
   const plans: Array<{
@@ -30,7 +73,7 @@ export const Prices: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="mt-4 text-3xl font-bold text-[#0A0B1A]">
-            {intl.formatMessage({ id: 'prices.title' })}
+            {highlightWord(displayedTitle)}
           </h2>
         </div>
 
