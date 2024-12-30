@@ -119,13 +119,13 @@ export const Hero: React.FC = () => {
                         <circle cx="12" cy="12" r="10"/>
                         <polygon points="10 8 16 12 10 16 10 8"/>
                       </svg>
-                      <span className="mt-0.5">{intl.formatMessage({ id: 'hero.watchDemo' })}</span>
+                      <span>{intl.formatMessage({ id: 'hero.watchDemo' })}</span>
                     </span>
                   </span>
                   <span className="text-two">
                     <span className="inline-flex items-center">
                       <svg 
-                        className="mr-2 h-5 w-5 mt-10" 
+                        className="mr-2 h-5 w-5"
                         viewBox="0 0 24 24" 
                         fill="none" 
                         stroke="currentColor" 
@@ -136,7 +136,7 @@ export const Hero: React.FC = () => {
                         <circle cx="12" cy="12" r="10"/>
                         <polygon points="10 8 16 12 10 16 10 8"/>
                       </svg>
-                      <span className="mt-0.5">{intl.formatMessage({ id: 'hero.watchDemo' })}</span>
+                      <span>{intl.formatMessage({ id: 'hero.watchDemo' })}</span>
                     </span>
                   </span>
                 </span>
