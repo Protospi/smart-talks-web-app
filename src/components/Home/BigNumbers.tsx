@@ -1,5 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useIntl } from 'react-intl';
+
+const useCountAnimation = (endValue: string, duration: number = 1000) => {
+  const [count, setCount] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(true);
+  const countRef = useRef({ start: 0, end: 0, prefix: '', suffix: '' });
+
+  useEffect(() => {
+    const matches = endValue.match(/([+-])?(\d+)([KM%])?/);
+    if (!matches) return;
+
+    const prefix = matches[1] || '';
+    const numberValue = parseInt(matches[2]);
+    const suffix = matches[3] || '';
+
+    countRef.current = {
+      start: 0,
+      end: numberValue,
+      prefix,
+      suffix,
+    };
+
+    const steps = 60;
+    const stepDuration = duration / steps;
+    const increment = numberValue / steps;
+    let currentStep = 0;
+
+    const timer = setInterval(() => {
+      currentStep++;
+      if (currentStep === steps) {
+        setCount(numberValue);
+        setIsAnimating(false);
+        clearInterval(timer);
+      } else {
+        setCount(Math.floor(increment * currentStep));
+      }
+    }, stepDuration);
+
+    return () => clearInterval(timer);
+  }, [endValue, duration]);
+
+  return { 
+    numericValue: count,
+    prefix: countRef.current.prefix,
+    suffix: countRef.current.suffix,
+    isAnimating 
+  };
+};
 
 interface StatProps {
   value: string;
@@ -7,13 +54,41 @@ interface StatProps {
   description: string;
 }
 
-const Stat: React.FC<StatProps> = ({ value, label, description }) => (
-  <div className="bg-[#6366F1] rounded-lg p-6 text-white">
-    <div className="text-4xl font-bold mb-2">{value}</div>
-    <div className="text-lg mb-2">{label}</div>
-    <div className="text-sm text-white/70">{description}</div>
-  </div>
-);
+const Stat: React.FC<StatProps> = ({ value, label, description }) => {
+  const { numericValue, prefix, suffix, isAnimating } = useCountAnimation(value);
+  
+  return (
+    <div className="bg-[#6366F1] rounded-lg p-6 text-white">
+      <div className="text-4xl font-bold mb-2 relative">
+        <div className={`relative inline-flex items-start ${prefix === '+' ? 'ml-5' : ''}`}>
+          {prefix && (
+            <span className="absolute top-1.5 -left-5 text-2xl">
+              {prefix}
+            </span>
+          )}
+          
+          <div className="relative h-[3.5rem] overflow-hidden">
+            <span 
+              className={`inline-block transition-transform duration-1000 ${
+                isAnimating ? 'animate-slot-machine' : ''
+              }`}
+            >
+              {numericValue}
+            </span>
+          </div>
+
+          {suffix && (
+            <span className="ml-1">
+              {suffix}
+            </span>
+          )}
+        </div>
+      </div>
+      <div className="text-lg mb-2">{label}</div>
+      <div className="text-sm text-white/70">{description}</div>
+    </div>
+  );
+};
 
 export const BigNumbers: React.FC = () => {
   const intl = useIntl();
