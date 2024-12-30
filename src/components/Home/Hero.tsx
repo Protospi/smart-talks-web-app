@@ -78,7 +78,7 @@ export const Hero: React.FC = () => {
                   <span className="typing-effect min-w-[4ch]">
                     {displayedTitle}
                   </span>
-                  <span className="relative whitespace-nowrap w-full -mt-4 sm:-mt-6 md:-mt-8">
+                  <span className="relative whitespace-nowrap w-full -mt-1 sm:-mt-2 md:-mt-4">
                     <span className="relative z-10 text-[#6366F1] typing-effect">
                       {isMainTitleDone ? displayedHighlight : ''}
                     </span>

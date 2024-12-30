@@ -52,13 +52,22 @@ interface StatProps {
   value: string;
   label: string;
   description: string;
+  index: number;
 }
 
-const Stat: React.FC<StatProps> = ({ value, label, description }) => {
+const Stat: React.FC<StatProps> = ({ value, label, description, index }) => {
   const { numericValue, prefix, suffix, isAnimating } = useCountAnimation(value);
   
   return (
-    <div className="bg-[#6366F1] rounded-lg p-6 text-white">
+    <div 
+      className="bg-[#6366F1] rounded-lg p-6 text-white opacity-0 translate-x-[100px] data-[visible=true]:opacity-100 data-[visible=true]:translate-x-0"
+      style={{
+        transitionDelay: `${index * 100}ms`,
+        transitionProperty: 'all',
+        transitionDuration: '800ms',
+        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      }}
+    >
       <div className="text-4xl font-bold mb-2 relative">
         <div className={`relative inline-flex items-start ${prefix === '+' ? 'ml-5' : ''}`}>
           {prefix && (
@@ -92,6 +101,34 @@ const Stat: React.FC<StatProps> = ({ value, label, description }) => {
 
 export const BigNumbers: React.FC = () => {
   const intl = useIntl();
+  const statsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.querySelectorAll('div[class*="bg-[#6366F1]"]').forEach((card) => {
+              card.setAttribute('data-visible', 'true');
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
 
   const stats = [
     {
@@ -127,7 +164,7 @@ export const BigNumbers: React.FC = () => {
   ];
 
   return (
-    <section id="big-numbers" className="py-16 bg-white">
+    <section id="big-numbers" className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -137,10 +174,14 @@ export const BigNumbers: React.FC = () => {
             {intl.formatMessage({ id: 'bigNumbers.subtitle' })}
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div 
+          ref={statsRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
           {stats.map((stat, index) => (
             <Stat
               key={index}
+              index={index}
               value={stat.value}
               label={intl.formatMessage({ id: stat.labelId })}
               description={intl.formatMessage({ id: stat.descriptionId })}
