@@ -11,7 +11,7 @@ export function Navigation() {
     <nav className="hidden md:flex items-center gap-8">
       <Link
         to="/"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -19,7 +19,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/about"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/about') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -27,7 +27,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/products"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/products') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -35,7 +35,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/solutions"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/solutions') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -43,7 +43,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/cases"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/cases') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -51,7 +51,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/plans"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/plans') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >
@@ -59,7 +59,7 @@ export function Navigation() {
       </Link>
       <Link
         to="/contact"
-        className={`text-sm font-bold transition-colors ${
+        className={`text-base font-bold font-rubik transition-colors ${
           isActive('/contact') ? 'text-[#8A6FF9]' : 'text-black hover:text-[#8A6FF9]'
         }`}
       >

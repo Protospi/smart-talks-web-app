@@ -9,6 +9,8 @@ export default {
   'nav.login': 'Login',
   'hero.title': 'Conversaciones inteligentes que generan resultados y',
   'hero.titleHighlight': 'venden',
+  'hero.titleHighlight2': 'encantan',
+  'hero.titleHighlight3': 'resuelven',
   'hero.subtitle': 'La plataforma más completa de marketing conversacional que concentra la mejor IA en varios canales.',
   'hero.tryNow': '¡Prueba ahora!',
   'hero.watchDemo': 'Ver demostración',

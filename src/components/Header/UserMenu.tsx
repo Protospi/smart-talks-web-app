@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useIntl } from 'react-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 export const UserMenu: React.FC = () => {
   const { user, logout } = useAuth0();
@@ -27,19 +29,9 @@ export const UserMenu: React.FC = () => {
         className="flex items-center focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {user.picture ? (
-          <img
-            className="h-8 w-8 rounded-full ring-2 ring-indigo-600"
-            src={user.picture}
-            alt={user.name}
-          />
-        ) : (
-          <div className="h-8 w-8 rounded-full bg-indigo-600 flex items-center justify-center ring-2 ring-indigo-600">
-            <span className="text-white text-sm">
-              {user.name?.charAt(0).toUpperCase()}
-            </span>
-          </div>
-        )}
+        <div className="h-8 w-8 rounded-full bg-indigo-600 flex items-center justify-center">
+          <FontAwesomeIcon icon={faUser} className="h-4 w-4 text-white" />
+        </div>
       </button>
 
       {isOpen && (
