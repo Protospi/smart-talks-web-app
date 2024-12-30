@@ -54,7 +54,7 @@ const ServiceContent: React.FC<ServiceContentProps> = ({ number, title, descript
 
 export const Services: React.FC = () => {
   const intl = useIntl();
-  const [activeService, setActiveService] = React.useState('franquia');
+  const [activeService, setActiveService] = React.useState('hotelaria');
 
   const services = [
     {

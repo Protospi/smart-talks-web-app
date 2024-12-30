@@ -7,20 +7,119 @@ interface FeatureCardProps {
   index: number;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, index }) => (
-  <div 
-    className="bg-gradient-to-br from-[#1a1b2e] to-[#2d2d4a] rounded-lg p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-300 opacity-0 translate-x-[-100px] data-[visible=true]:opacity-100 data-[visible=true]:translate-x-0"
-    style={{
-      transitionDelay: `${index * 100}ms`,
-      transitionProperty: 'all',
-      transitionDuration: '800ms',
-      transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-    }}
-  >
-    <h3 className="text-xl font-semibold mb-3">{title}</h3>
-    <p className="text-gray-300">{description}</p>
-  </div>
-);
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, index }) => {
+  const intl = useIntl();
+  const isManagementCard = title === intl.formatMessage({ id: 'features.management.title' });
+  const isJourneyCard = title === intl.formatMessage({ id: 'features.journey.title' });
+  const isSecurityCard = title === intl.formatMessage({ id: 'features.security.title' });
+  const isHybridCard = title === intl.formatMessage({ id: 'features.hybrid.title' });
+  const isResolutionCard = title === intl.formatMessage({ id: 'features.resolution.title' });
+
+  const formatDescription = (text: string) => {
+    // First handle APIs highlighting for all cards
+    const withHighlightedAPIs = text.split(/\b(APIs?)\b/).map((part, i) => 
+      part.match(/\b(APIs?)\b/) ? 
+        <span key={`api-${i}`} className="text-[#8687FF] font-extrabold">{part}</span> : 
+        part
+    );
+
+    // For management card, highlight the last two words
+    if (isManagementCard) {
+      return withHighlightedAPIs.map(part => {
+        if (typeof part === 'string') {
+          const words = part.split(/\s+/);
+          if (words.length >= 2) {
+            const lastTwoWords = words.slice(-2).join(' ');
+            const restOfWords = words.slice(0, -2).join(' ');
+            return (
+              <>
+                {restOfWords && `${restOfWords} `}
+                <span className="text-[#8687FF] font-extrabold">{lastTwoWords}</span>
+              </>
+            );
+          }
+        }
+        return part;
+      });
+    }
+
+    // For journey card, highlight personalization words
+    if (isJourneyCard) {
+      return withHighlightedAPIs.map(part => {
+        if (typeof part === 'string') {
+          return part.split(/\b(personalization|personalização|personalización)\b/i).map((word, i) => 
+            word.match(/\b(personalization|personalização|personalización)\b/i) ?
+              <span key={`personalization-${i}`} className="text-[#8687FF] font-extrabold">{word}</span> :
+              word
+          );
+        }
+        return part;
+      });
+    }
+
+    // For security card, highlight protected/protegidos words
+    if (isSecurityCard) {
+      return withHighlightedAPIs.map(part => {
+        if (typeof part === 'string') {
+          return part.split(/\b(protected|protegidos)\b/i).map((word, i) => 
+            word.match(/\b(protected|protegidos)\b/i) ?
+              <span key={`protected-${i}`} className="text-[#8687FF] font-extrabold">{word}</span> :
+              word
+          );
+        }
+        return part;
+      });
+    }
+
+    // For hybrid card, highlight automated flows words
+    if (isHybridCard) {
+      return withHighlightedAPIs.map(part => {
+        if (typeof part === 'string') {
+          return part.split(/\b(automated flows|fluxos automatizados|flujos automatizados)\b/i).map((word, i) => 
+            word.match(/\b(automated flows|fluxos automatizados|flujos automatizados)\b/i) ?
+              <span key={`automated-${i}`} className="text-[#8687FF] font-extrabold">{word}</span> :
+              word
+          );
+        }
+        return part;
+      });
+    }
+
+    // For resolution card, highlight reduce/reduzem/reducen and 80%
+    if (isResolutionCard) {
+      return withHighlightedAPIs.map(part => {
+        if (typeof part === 'string') {
+          return part.split(/(\b(?:reduce|reduzem|reducen)\b|80%)/i).map((word, i) => {
+            if (word?.match(/\b(?:reduce|reduzem|reducen)\b/i) || word === '80%') {
+              return <span key={`resolution-${i}`} className="text-[#8687FF] font-extrabold">{word}</span>;
+            }
+            return word;
+          });
+        }
+        return part;
+      });
+    }
+
+    return withHighlightedAPIs;
+  };
+
+  return (
+    <div 
+      className="bg-gradient-to-br from-[#242538] to-[#363654] rounded-lg p-6 text-white shadow-xl hover:shadow-2xl transition-all duration-300 opacity-0 translate-x-[-100px] data-[visible=true]:opacity-100 data-[visible=true]:translate-x-0"
+      style={{
+        transitionDelay: `${index * 100}ms`,
+        transitionProperty: 'all',
+        transitionDuration: '800ms',
+        transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      }}
+    >
+      <h3 className="text-xl font-semibold mb-3">{title}</h3>
+      <p className="text-gray-300">
+        {formatDescription(description)}
+      </p>
+    </div>
+  );
+};
 
 export const Features: React.FC = () => {
   const intl = useIntl();
